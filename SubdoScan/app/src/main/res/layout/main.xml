@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#003B6C"
+   >
+   
+  <TextView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="AsukaDev"
+	  android:textSize="25dp"
+	  android:textColor="#E78F65"
+	  android:typeface="serif"
+	  android:id="@+id/a"
+	  android:layout_margin="15dp"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Subdomain Scanner"
+		android:textSize="18dp"
+		android:textColor="#E7AD65"
+		android:typeface="serif"
+		android:layout_below="@+id/a"
+		android:id="@+id/b"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="-10dp"
+		/>
+	<ImageView
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:id="@+id/ko"
+		android:src="@drawable/logo"
+		android:layout_margin="15dp"
+		android:layout_alignParentRight="true"/>
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:id="@+id/ed"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="140dp"
+		android:hint="Enter domain, ex : detik.com"
+		android:gravity="center"
+		
+		android:singleLine="true" 
+		android:inputType="text"
+		android:background="@drawable/editstyle"
+		android:textColor="#D45B53"
+		android:imeOptions="actionGo"
+		/>
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true"
+			android:layout_marginTop="200dp"
+			android:background="@drawable/curve"
+			android:scrollbars="none">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="top"
+				android:orientation="vertical"
+				> 
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="Result Search : "
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:layout_marginTop="15dp"
+			android:typeface="serif"
+			android:textSize="14dp"
+			android:layout_marginBottom="20dp"
+			android:id="@+id/result"
+			android:textColor="#4BD04D"/>
+		
+			</LinearLayout>
+		</ScrollView>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Develop by { Ricky V | _Hikki }"
+		android:typeface="serif"
+		android:gravity="center"
+		android:textSize="10dp"
+		android:id="@+id/author"
+
+		android:layout_alignParentBottom="true"
+		android:textColor="#D5D5D5"/>
+	<ImageView
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:id="@+id/save"
+		android:src="@drawable/save"
+		android:visibility="gone"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="225dp"
+		android:layout_marginRight="15dp"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/loading"
+		android:background="#80000000"
+		android:visibility="gone"
+		/>
+</RelativeLayout>

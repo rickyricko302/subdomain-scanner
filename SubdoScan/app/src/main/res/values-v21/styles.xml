@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+		<item name="android:statusBarColor">#003B4E</item>
+		
+	</style>
+	<style name="myBar" parent="@android:style/Widget.Material.Light.ActionBar">
+		<item name="android:background">#003B6C</item>
+		<item name="android:titleTextStyle">@style/myText</item>
+	</style>
+	<style name="myText" parent = "@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">#ffffff</item>
+	</style>
+	
+</resources>
+
+
